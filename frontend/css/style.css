@@ -1,0 +1,225 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+/* Smooth Scroll */
+
+html{
+scroll-behavior:smooth;
+}
+
+/* Background */
+
+body{
+background: linear-gradient(135deg,#5f9cff,#7b5cff);
+min-height:100vh;
+padding:30px;
+}
+
+/* Title */
+
+h1{
+text-align:center;
+color:white;
+margin-bottom:30px;
+}
+
+/* Smooth Card Animation */
+
+.smooth-card{
+animation:fadeUp 0.7s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Controls */
+
+.controls{
+background:white;
+padding:20px;
+border-radius:12px;
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+align-items:end;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+margin-bottom:25px;
+}
+
+.controls label{
+font-weight:bold;
+}
+
+/* Inputs */
+
+input,select{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+min-width:200px;
+}
+
+/* Button */
+
+button{
+background: linear-gradient(45deg,#ff6a00,#ee0979);
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Results */
+
+.results{
+background:white;
+padding:20px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Chart Container */
+
+.chart-container{
+background:#0f172a;
+padding:25px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+color:white;
+}
+
+.chart-container h2{
+margin-bottom:15px;
+}
+
+/* Canvas */
+
+canvas{
+background:#111827;
+border-radius:10px;
+padding:10px;
+}
+
+/* Suggestions */
+
+.suggestions-box{
+background:white;
+border:1px solid #ddd;
+max-height:150px;
+overflow-y:auto;
+position:absolute;
+width:200px;
+}
+
+.suggestions-box div{
+padding:8px;
+cursor:pointer;
+}
+
+.suggestions-box div:hover{
+background:#f3f4f6;
+}
+
+/* Navbar */
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:#0f172a;
+
+color:white;
+
+padding:15px 30px;
+
+margin-bottom:20px;
+
+border-radius:10px;
+
+}
+
+.nav-right{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+/* Logout Button */
+
+.logout-btn{
+
+background:#ef4444;
+
+border:none;
+
+color:white;
+
+padding:8px 15px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
+
+.logout-btn:hover{
+
+background:#dc2626;
+
+}
+
+.pdf-btn{
+
+margin-top:15px;
+padding:10px 18px;
+background:#16a34a;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+
+}
+
+.pdf-btn:hover{
+
+background:#15803d;
+transform:scale(1.05);
+
+}
