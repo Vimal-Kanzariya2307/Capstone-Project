@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Stock Volatility Dashboard</title>
+<title>Stock Dashboard</title>
 
 <script>
 
-// agar user login hai to dashboard open hoga
-if(localStorage.getItem("user")){
-    window.location.href="login.html"
-}
-else{
-    window.location.href="login.html"
+// check user login status
+const user = localStorage.getItem("user");
+
+if(user){
+    // already logged in → dashboard
+    window.location.href = "deshbord.html";
+}else{
+    // not logged in → login page
+    window.location.href = "login.html";
 }
 
 </script>
 
 </head>
+
 <body>
 
 <h2>Loading...</h2>
